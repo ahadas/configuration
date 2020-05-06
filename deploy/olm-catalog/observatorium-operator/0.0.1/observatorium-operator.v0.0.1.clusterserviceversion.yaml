@@ -83,21 +83,6 @@ spec:
                     cpu: 100m
                     memory: 600Mi
               terminationGracePeriodSeconds: 10
-                env:
-                - name: WATCH_NAMESPACE
-                  valueFrom:
-                    fieldRef:
-                      fieldPath: metadata.annotations['olm.targetNamespaces']
-                - name: POD_NAME
-                  valueFrom:
-                    fieldRef:
-                      fieldPath: metadata.name
-                - name: OPERATOR_NAME
-                  value: observatorium-operator
-                image: quay.io/ahadas/observatorium-operator:latest
-                imagePullPolicy: Always
-                name: observatorium-operator
-                resources: {}
               serviceAccountName: observatorium-operator
       permissions:
       - rules:
