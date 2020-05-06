@@ -83,7 +83,7 @@ spec:
                       fieldPath: metadata.name
                 - name: OPERATOR_NAME
                   value: observatorium-operator
-                image: quay.io/derez/observatorium-operator:latest
+                image: quay.io/ahadas/observatorium-operator:latest
                 imagePullPolicy: Always
                 name: observatorium-operator
                 resources: {}
