@@ -83,7 +83,7 @@ spec:
                       fieldPath: metadata.name
                 - name: OPERATOR_NAME
                   value: observatorium-operator
-                image: REPLACE_IMAGE
+                image: quay.io/derez/observatorium-operator:latest
                 imagePullPolicy: Always
                 name: observatorium-operator
                 resources: {}
