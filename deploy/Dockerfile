@@ -1,6 +1,6 @@
 FROM quay.io/openshift/origin-operator-registry:latest
 
-COPY olm-catalog /registry
+COPY deploy/olm-catalog /registry
 
 # Initialize the database
 RUN initializer --manifests /registry/observatorium-operator --output bundles.db
