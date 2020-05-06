@@ -178,9 +178,9 @@ spec:
   keywords:
   - ""
   maintainers:
-  - {}
+  - name: observatorium
+    email: aa@aa.com
   maturity: alpha
   provider:
     name: Red Hat
-  replaces: observatorium-operator.v0.0.0
   version: 0.0.1
