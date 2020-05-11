@@ -2,3 +2,4 @@
 /kubectl
 vendor/
 tmp/
+_cache/
